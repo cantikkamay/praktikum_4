@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Combinator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="img/png" href="gambar/icon.png" sizes="16x16" />
+    <link rel='stylesheet' href="main.css">
+    
+    <style> 
+        div p { /* no 1 */
+            color: red;
+        }
+        div > p { /* no 2 */
+            background-color: yellow;
+        }
+        div + p { /* no 3 */
+            background-color: darkgray;
+        }
+        div ~ p { /* no 4 */
+            color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>This is a paragraph. Selektor 1: Mewarnai teks menjadi merah</p>
+        <p>This is a paragraph. Selector 2: Mewarnai background menjadi kuning </p>
+    </div>
+    <p>This is a paragraph. Selektor 3: Menambahkan latar belakang darkgray karena merupakan sibling langsung dari div</p>
+    <p>This is a paragraph. Selektor 4: Mewarnai teks menjadi cyan karena merupakan sibling dari div</p>
+</body>
+</html>

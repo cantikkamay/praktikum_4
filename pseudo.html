@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Latihan Pseudo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="img/png" href="gambar/icon.png" sizes="16x16" />
+    <link rel='stylesheet' href="main.css">
+
+    <style> 
+        p {
+            display: none;
+            background-color: darkgray;
+            padding: 20px;
+        }
+
+        div:hover p { 
+            display: block;
+        }
+
+        a {
+            text-decoration: none; 
+            color: blue; 
+            transition: color 0.3s ease; 
+        }
+
+        a:hover {
+            color: red; 
+        }
+    </style>
+</head>
+<body>
+    <div> Letakkan kursor disini untuk melihat div element
+        <p>Saya adalah element p</p>
+    </div>
+    <a href="https://siakad.pnm.ac.id/gate/login">Link yang berubah warna saat dihover</a>
+</body>
+</html>
